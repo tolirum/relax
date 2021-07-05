@@ -9,9 +9,9 @@ for (let i=0; i<SQUARES_NUMBER;i++) {
 		setColor(square))
 	square.addEventListener('mouseleave', ()=> 
 		removeColor(square))
-	square.addEventListener('touchstart', ()=> 
+	square.addEventListener('touchenter', ()=> 
 		setColor(square))
-	square.addEventListener('touchend', ()=> 
+	square.addEventListener('touchleave', ()=> 
 		removeColor(square))
 
 	board.append(square)
